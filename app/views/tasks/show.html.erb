@@ -1,0 +1,8 @@
+<h1><%=@task.title%></h1>
+<br>
+<p> <%=@task.details%> </p>
+<br>
+<%= check_box("tag", @task.title, {checked: @task.completed})%><%=@massege%>
+
+<%=link_to"Edit this Task", controller: "tasks", action: "edit", id:@task%> <br>
+<%=link_to "Back to list", tasks_path%>

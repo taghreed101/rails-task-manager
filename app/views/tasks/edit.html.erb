@@ -1,0 +1,9 @@
+
+<hr>
+
+<%=form_with(model: @task, url: "/tasks/1", method:"put") do |form| %>
+  <%=form.text_field :title %>
+ <%=form.text_area :details %>
+ <%= form.check_box :completed, {}, true, false %>
+ <%=form.submit%>
+<%end%> 

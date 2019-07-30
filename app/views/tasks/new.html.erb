@@ -1,0 +1,13 @@
+
+
+
+
+
+
+<hr>
+<% form_with(scope: :task, url: tasks_path) do |form|%>
+  <%=form.text_field :title %>
+ <%=form.text_area :details %>
+
+ <%=form.submit%>
+<%end%>
